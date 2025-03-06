@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import PaymentForm from "./paymentForm/PaymentForm";
 interface WrapperProps {
   children: ReactNode;
 }
@@ -15,8 +16,10 @@ const Information = ({ children }: WrapperProps) => {
       </div>
       {/*  */}
       <div className="flex w-full bg-[#27272a] mb-[24px] ">
-        <div className="flex-[1]">abc</div>
-        <div className="flex-[2]">
+        <div className="flex-[1] my-1">
+          <PaymentForm />
+        </div>
+        <div className="flex-[2] m-[6px]">
           <img
             src="/assets/background_Image_2.jpg"
             alt="ảnh nền 2"
